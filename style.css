@@ -1,0 +1,57 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#game{
+	margin:50px;
+	width:1000px;
+	height:300px;
+	background-color:#03fcdf;
+	background-size: 100% 100%;
+
+	overflow:hidden;
+}
+
+#hero{
+	width:30px;
+	height:50px;
+	background-color:red;
+	background-image:url('hero.jpg');
+	background-color:#03fcdf;
+	background-blend-mode:darken;
+	background-size:100% 100%;
+	position:relative;
+	top:250px; 
+}
+
+.animate{
+	animation:jump 500ms;
+}
+
+
+@keyframes jump{
+	0%{top:250px;}
+	33%{top:170px;}
+	66%{top:170px;}
+	100%{top:250px;}
+}
+
+#obstacle{
+	width:100px;
+	height:50px;
+	background-color:blue;
+	background-image:url('fish.jpg');
+	background-color:#03fcdf;
+	background-blend-mode:darken;
+	background-size:100% 100%;
+	position:relative;
+	top:200px;
+	left:900px;
+	animation:obstacle 2s infinite linear;
+}
+
+@keyframes obstacle{
+	0%{left:900px;}
+	100%{left:-100px;}
+}
